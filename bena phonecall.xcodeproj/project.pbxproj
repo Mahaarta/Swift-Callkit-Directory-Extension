@@ -7,15 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		089C4DA22CCB8ED100EFA420 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089C4DA12CCB8ED100EFA420 /* CallDirectoryHandler.swift */; };
+		089C4DA62CCB8ED100EFA420 /* CallDirectoryHandler.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 089C4D9F2CCB8ED100EFA420 /* CallDirectoryHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		08B61C852CCA1F690019984A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B61C842CCA1F690019984A /* AppDelegate.swift */; };
 		08B61C872CCA1F690019984A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B61C862CCA1F690019984A /* SceneDelegate.swift */; };
 		08B61C892CCA1F690019984A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B61C882CCA1F690019984A /* ViewController.swift */; };
 		08B61C8C2CCA1F690019984A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 08B61C8B2CCA1F690019984A /* Base */; };
 		08B61C8E2CCA1F690019984A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B61C8D2CCA1F690019984A /* Assets.xcassets */; };
 		08B61C912CCA1F690019984A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 08B61C902CCA1F690019984A /* Base */; };
+		08B61C9A2CCA2CAA0019984A /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B61C992CCA2CAA0019984A /* CallManager.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		089C4DA42CCB8ED100EFA420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08B61C792CCA1F680019984A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 089C4D9E2CCB8ED100EFA420;
+			remoteInfo = CallDirectoryHandler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08B61CAA2CCB43000019984A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				089C4DA62CCB8ED100EFA420 /* CallDirectoryHandler.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		089C4D952CCB4DFA00EFA420 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
+		089C4D9F2CCB8ED100EFA420 /* CallDirectoryHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallDirectoryHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		089C4DA12CCB8ED100EFA420 /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		089C4DA32CCB8ED100EFA420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08B61C812CCA1F680019984A /* bena phonecall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bena phonecall.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B61C842CCA1F690019984A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08B61C862CCA1F690019984A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,9 +55,18 @@
 		08B61C8D2CCA1F690019984A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08B61C902CCA1F690019984A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08B61C922CCA1F690019984A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08B61C982CCA1F950019984A /* bena phonecall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "bena phonecall.entitlements"; sourceTree = "<group>"; };
+		08B61C992CCA2CAA0019984A /* CallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		089C4D9C2CCB8ED100EFA420 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08B61C7E2CCA1F680019984A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,11 +77,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		089C4D942CCB4DFA00EFA420 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C4D952CCB4DFA00EFA420 /* CallKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		089C4DA02CCB8ED100EFA420 /* CallDirectoryHandler */ = {
+			isa = PBXGroup;
+			children = (
+				089C4DA12CCB8ED100EFA420 /* CallDirectoryHandler.swift */,
+				089C4DA32CCB8ED100EFA420 /* Info.plist */,
+			);
+			path = CallDirectoryHandler;
+			sourceTree = "<group>";
+		};
 		08B61C782CCA1F680019984A = {
 			isa = PBXGroup;
 			children = (
 				08B61C832CCA1F680019984A /* bena phonecall */,
+				089C4DA02CCB8ED100EFA420 /* CallDirectoryHandler */,
 				08B61C822CCA1F680019984A /* Products */,
+				089C4D942CCB4DFA00EFA420 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				08B61C812CCA1F680019984A /* bena phonecall.app */,
+				089C4D9F2CCB8ED100EFA420 /* CallDirectoryHandler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +116,7 @@
 		08B61C832CCA1F680019984A /* bena phonecall */ = {
 			isa = PBXGroup;
 			children = (
+				08B61C982CCA1F950019984A /* bena phonecall.entitlements */,
 				08B61C842CCA1F690019984A /* AppDelegate.swift */,
 				08B61C862CCA1F690019984A /* SceneDelegate.swift */,
 				08B61C882CCA1F690019984A /* ViewController.swift */,
@@ -63,6 +124,7 @@
 				08B61C8D2CCA1F690019984A /* Assets.xcassets */,
 				08B61C8F2CCA1F690019984A /* LaunchScreen.storyboard */,
 				08B61C922CCA1F690019984A /* Info.plist */,
+				08B61C992CCA2CAA0019984A /* CallManager.swift */,
 			);
 			path = "bena phonecall";
 			sourceTree = "<group>";
@@ -70,6 +132,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		089C4D9E2CCB8ED100EFA420 /* CallDirectoryHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 089C4DA72CCB8ED100EFA420 /* Build configuration list for PBXNativeTarget "CallDirectoryHandler" */;
+			buildPhases = (
+				089C4D9B2CCB8ED100EFA420 /* Sources */,
+				089C4D9C2CCB8ED100EFA420 /* Frameworks */,
+				089C4D9D2CCB8ED100EFA420 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallDirectoryHandler;
+			productName = CallDirectoryHandler;
+			productReference = 089C4D9F2CCB8ED100EFA420 /* CallDirectoryHandler.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		08B61C802CCA1F680019984A /* bena phonecall */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08B61C952CCA1F690019984A /* Build configuration list for PBXNativeTarget "bena phonecall" */;
@@ -77,10 +156,12 @@
 				08B61C7D2CCA1F680019984A /* Sources */,
 				08B61C7E2CCA1F680019984A /* Frameworks */,
 				08B61C7F2CCA1F680019984A /* Resources */,
+				08B61CAA2CCB43000019984A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				089C4DA52CCB8ED100EFA420 /* PBXTargetDependency */,
 			);
 			name = "bena phonecall";
 			productName = "bena phonecall";
@@ -97,6 +178,9 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					089C4D9E2CCB8ED100EFA420 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					08B61C802CCA1F680019984A = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -116,11 +200,19 @@
 			projectRoot = "";
 			targets = (
 				08B61C802CCA1F680019984A /* bena phonecall */,
+				089C4D9E2CCB8ED100EFA420 /* CallDirectoryHandler */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		089C4D9D2CCB8ED100EFA420 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08B61C7F2CCA1F680019984A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +226,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		089C4D9B2CCB8ED100EFA420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089C4DA22CCB8ED100EFA420 /* CallDirectoryHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08B61C7D2CCA1F680019984A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,10 +241,19 @@
 				08B61C892CCA1F690019984A /* ViewController.swift in Sources */,
 				08B61C852CCA1F690019984A /* AppDelegate.swift in Sources */,
 				08B61C872CCA1F690019984A /* SceneDelegate.swift in Sources */,
+				08B61C9A2CCA2CAA0019984A /* CallManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		089C4DA52CCB8ED100EFA420 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 089C4D9E2CCB8ED100EFA420 /* CallDirectoryHandler */;
+			targetProxy = 089C4DA42CCB8ED100EFA420 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		08B61C8A2CCA1F690019984A /* Main.storyboard */ = {
@@ -166,6 +275,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		089C4DA82CCB8ED100EFA420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PXM3B3837H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CallDirectoryHandler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CallDirectoryHandler;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mahaarta.bena-phonecall1.CallDirectoryHandler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		089C4DA92CCB8ED100EFA420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PXM3B3837H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CallDirectoryHandler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CallDirectoryHandler;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mahaarta.bena-phonecall1.CallDirectoryHandler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		08B61C932CCA1F690019984A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -218,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -288,24 +451,28 @@
 		08B61C962CCA1F690019984A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "bena phonecall/bena phonecall.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3HGJV364P5;
+				DEVELOPMENT_TEAM = PXM3B3837H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "bena phonecall/Info.plist";
+				INFOPLIST_KEY_NSContactsUsageDescription = "We need access to your contacts to improve your calling experience.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mahaarta.bena-phonecall";
+				PRODUCT_BUNDLE_IDENTIFIER = "mahaarta.bena-phonecall1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -316,24 +483,28 @@
 		08B61C972CCA1F690019984A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "bena phonecall/bena phonecall.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3HGJV364P5;
+				DEVELOPMENT_TEAM = PXM3B3837H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "bena phonecall/Info.plist";
+				INFOPLIST_KEY_NSContactsUsageDescription = "We need access to your contacts to improve your calling experience.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mahaarta.bena-phonecall";
+				PRODUCT_BUNDLE_IDENTIFIER = "mahaarta.bena-phonecall1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -344,6 +515,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		089C4DA72CCB8ED100EFA420 /* Build configuration list for PBXNativeTarget "CallDirectoryHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				089C4DA82CCB8ED100EFA420 /* Debug */,
+				089C4DA92CCB8ED100EFA420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		08B61C7C2CCA1F680019984A /* Build configuration list for PBXProject "bena phonecall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
